@@ -1,0 +1,40 @@
+<div *ngIf="bags">
+    <div *ngIf="collection">
+    <ol class="breadcrumb">
+        <li><a [routerLink]="['/']" >Collections</a></li>
+        <li><a [routerLink]="[ '/', collection.id,'bags']" >{{ collection.name }}</a></li>
+        <li class="active">{{ bags[0].title }}</li>
+    </ol>
+    </div>
+    <div class="jumbotron text-center">
+        <h1>{{ bags[0].title }}</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Beschrijving</h3>
+        </div>
+        <div class="col-sm-8">
+            <p>{{bags[0].description }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-3 box" *ngFor="let bag of bags">
+            <a href="{{bag.url}}" data-lightbox="attachments">
+                <img class="thumbnail" [src]=bag.url>
+            </a>
+        </div>
+    </div>
+</div>
+ <div *ngIf='!bags'>
+    <div class="jumbotron text-center">
+        <h1>Beeldbank</h1>
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            No bags found
+        </div>
+        <div class="panel-body">
+            Api unreachable
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div *ngIf="collection">
+    <ol class="breadcrumb">
+        <li><a [routerLink]="['/']" >Collections</a></li>
+        <li class="active">{{ collection.name }}</li>
+    </ol>
+    <div class="jumbotron text-center">
+        <h1>{{ collection.name }}</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Beschrijving</h3>
+        </div>
+        <div class="col-sm-8">
+            <p>{{collection.description }}</p>
+        </div>
+    </div>
+    <div  class="row " *ngIf="bags">
+        <div class="col-sm-6 col-md-4 box" *ngFor="let bag of bags">
+            <div class="thumbnail" >
+                <img [src]=bag.attachments[0].url>
+                <div class="caption">
+                    <h3>{{ bag.title }}</h3>
+                    <p>{{ bag.description }}</p>
+                    <p><a [routerLink]="[ bag.id,'attachments']" class="btn btn-primary" role="button">Bekijk meer</a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!bags">
+            <h1>None available</h1>
+        </div>
+    </div>
+ </div>
+ <div *ngIf='!collection'>
+    <div class="jumbotron text-center">
+        <h1>Beeldbank</h1>
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            No collections found
+        </div>
+        <div class="panel-body">
+            Api unreachable
+        </div>
+    </div>
+</div>
+
