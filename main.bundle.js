@@ -486,10 +486,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var CollectionService = (function () {
-    //private collectionsUrl: string = 'http://beeldback.jefroosens.be/api/v1/collections';
     function CollectionService(http) {
         this.http = http;
-        this.collectionsUrl = 'http://192.168.10.40/api/v1/collections';
+        //private collectionsUrl: string = 'http://192.168.10.40/api/v1/collections';
+        this.collectionsUrl = 'http://beeldback.gdm.gent/api/v1/collections';
     }
     /**
      * Get all collections
