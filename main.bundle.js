@@ -1,12 +1,12 @@
 webpackJsonp([1,5],{
 
-/***/ 272:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__ = __webpack_require__(62);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BagSingleComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -38,7 +38,7 @@ var BagSingleComponent = (function () {
     BagSingleComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             styles: ["\n        .thumbnail{\n            width: 100%;\n            height: 100%;\n            margin: 0.5em!important;\n            padding: 0.5em!important;\n        }\n        \n    "],
-            template: __webpack_require__(493)
+            template: __webpack_require__(532)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__["a" /* CollectionService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__["a" /* CollectionService */]) === 'function' && _b) || Object])
     ], BagSingleComponent);
@@ -49,13 +49,13 @@ var BagSingleComponent = (function () {
 
 /***/ }),
 
-/***/ 273:
+/***/ 306:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__ = __webpack_require__(62);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionSingleComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87,7 +87,7 @@ var CollectionSingleComponent = (function () {
     CollectionSingleComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             styles: ["\n        .row{\n            display: -webkit-flex;\n            display: -ms-flexbox;\n            display: flex;\n        \n            -webkit-flex-wrap: wrap;\n            -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n        }\n        .box {\n            display: -webkit-flex;\n            display: -ms-flexbox;\n            display: flex;\n        } \n\n    "],
-            template: __webpack_require__(494)
+            template: __webpack_require__(533)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__["a" /* CollectionService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__["a" /* CollectionService */]) === 'function' && _b) || Object])
     ], CollectionSingleComponent);
@@ -98,12 +98,12 @@ var CollectionSingleComponent = (function () {
 
 /***/ }),
 
-/***/ 274:
+/***/ 307:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_collection_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_collection_service__ = __webpack_require__(62);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -135,12 +135,12 @@ var CollectionsComponent = (function () {
 
 /***/ }),
 
-/***/ 275:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_collection_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_collection_service__ = __webpack_require__(62);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -156,17 +156,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var HomeComponent = (function () {
     function HomeComponent(service) {
         this.service = service;
+        this.attachments = new Array;
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.service.getCollections()
-            .subscribe(function (collections) { return _this.collections = collections; });
+            .subscribe(function (res) {
+            _this.collections = res;
+            for (var i = 0; i < res.length; i++) {
+                var collectionid = res[i].id;
+                _this.service.getBagsFromCollection(collectionid)
+                    .subscribe(function (bags) {
+                    var bagid = bags[0].id;
+                    _this.service.getBagWithAttachments(bagid)
+                        .subscribe(function (data) {
+                        var attachmenturl = data[0].url;
+                        console.log(attachmenturl);
+                        _this.attachments.push(attachmenturl);
+                    });
+                });
+            }
+        });
     };
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
-            styles: [" \n        .media-object{\n            width: 100px!important;\n            height: auto!important;\n        }\n        .media{\n            margin: 20px 0!important;\n            padding: 20px !important;\n            background-color: #f3f3f3!important;\n            border-radius: 10px !important;\n            cursor: pointer;\n        }\n    "],
+            styles: [" \n        .media-object{\n            width: 100px!important;\n            height: auto!important;\n        }\n        .media{\n            margin: 20px 0!important;\n            padding: 20px !important;\n            background-color: #f3f3f3!important;\n            border-radius: 10px !important;\n            cursor: pointer;\n        }\n        .row{\n            display: -webkit-flex;\n            display: -ms-flexbox;\n            display: flex;\n        \n            -webkit-flex-wrap: wrap;\n            -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n        }\n        .box {\n            display: -webkit-flex;\n            display: -ms-flexbox;\n            display: flex;\n        } \n    "],
             selector: 'home-page',
-            template: __webpack_require__(495)
+            template: __webpack_require__(534)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_collection_service__["a" /* CollectionService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_collection_service__["a" /* CollectionService */]) === 'function' && _a) || Object])
     ], HomeComponent);
@@ -177,7 +193,7 @@ var HomeComponent = (function () {
 
 /***/ }),
 
-/***/ 276:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -208,7 +224,7 @@ var NotFoundComponent = (function () {
 
 /***/ }),
 
-/***/ 311:
+/***/ 344:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -217,20 +233,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 311;
+webpackEmptyContext.id = 344;
 
 
 /***/ }),
 
-/***/ 312:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_app_app_module__ = __webpack_require__(430);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_app_app_module__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(471);
 
 
 
@@ -243,13 +259,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 429:
+/***/ 468:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_collection_service__ = __webpack_require__(62);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -288,31 +304,32 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 430:
+/***/ 469:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing__ = __webpack_require__(431);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(429);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_collection_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__not_found_not_found_component__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__collections_collections_component__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__collections_collection_single_collection_single_component__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collections_bag_single_bag_single_component__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_map__ = __webpack_require__(502);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_topromise__ = __webpack_require__(503);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_topromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_topromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_catch__ = __webpack_require__(500);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_do__ = __webpack_require__(501);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_observable_throw__ = __webpack_require__(499);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_add_observable_throw__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_collection_service__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__not_found_not_found_component__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_home_component__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__collections_collections_component__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collections_collection_single_collection_single_component__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__collections_bag_single_bag_single_component__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_map__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_topromise__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_topromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_add_operator_topromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_catch__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_do__ = __webpack_require__(540);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_add_observable_throw__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_add_observable_throw__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -339,6 +356,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -347,21 +365,22 @@ var AppModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_3__app_routing__["a" /* routing */]
+                __WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* routing */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */]
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__collections_collections_component__["a" /* CollectionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__not_found_not_found_component__["a" /* NotFoundComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__collections_collection_single_collection_single_component__["a" /* CollectionSingleComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__collections_bag_single_bag_single_component__["a" /* BagSingleComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__collections_collections_component__["a" /* CollectionsComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__not_found_not_found_component__["a" /* NotFoundComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__collections_collection_single_collection_single_component__["a" /* CollectionSingleComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__collections_bag_single_bag_single_component__["a" /* BagSingleComponent */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_5__shared_services_collection_service__["a" /* CollectionService */]
+                __WEBPACK_IMPORTED_MODULE_6__shared_services_collection_service__["a" /* CollectionService */]
             ],
             bootstrap: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]
             ]
         }), 
         __metadata('design:paramtypes', [])
@@ -372,16 +391,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 431:
+/***/ 470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collections_collections_component__ = __webpack_require__(274);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collections_collection_single_collection_single_component__ = __webpack_require__(273);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__collections_bag_single_bag_single_component__ = __webpack_require__(272);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__not_found_not_found_component__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__collections_collections_component__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__collections_collection_single_collection_single_component__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__collections_bag_single_bag_single_component__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__not_found_not_found_component__ = __webpack_require__(309);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
@@ -419,7 +438,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule 
 
 /***/ }),
 
-/***/ 432:
+/***/ 471:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -435,42 +454,42 @@ var environment = {
 
 /***/ }),
 
-/***/ 493:
+/***/ 532:
 /***/ (function(module, exports) {
 
 module.exports = "<div *ngIf=\"bags\">\n    <div *ngIf=\"collection\">\n    <ol class=\"breadcrumb\">\n        <li><a [routerLink]=\"['/']\" >Collections</a></li>\n        <li><a [routerLink]=\"[ '/', collection.id,'bags']\" >{{ collection.name }}</a></li>\n        <li class=\"active\">{{ bags[0].title }}</li>\n    </ol>\n    </div>\n    <div class=\"jumbotron text-center\">\n        <h1>{{ bags[0].title }}</h1>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-4\">\n            <h3>Beschrijving</h3>\n        </div>\n        <div class=\"col-sm-8\">\n            <p>{{bags[0].description }}</p>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-xs-6 col-md-3 box\" *ngFor=\"let bag of bags\">\n            <a href=\"{{bag.url}}\" data-lightbox=\"attachments\">\n                <img class=\"thumbnail\" [src]=bag.url>\n            </a>\n        </div>\n    </div>\n</div>\n <div *ngIf='!bags'>\n    <div class=\"jumbotron text-center\">\n        <h1>Beeldbank</h1>\n    </div>\n    <div class=\"panel panel-danger\">\n        <div class=\"panel-heading\">\n            No bags found\n        </div>\n        <div class=\"panel-body\">\n            Api unreachable\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
-/***/ 494:
+/***/ 533:
 /***/ (function(module, exports) {
 
 module.exports = "<div *ngIf=\"collection\">\n    <ol class=\"breadcrumb\">\n        <li><a [routerLink]=\"['/']\" >Collections</a></li>\n        <li class=\"active\">{{ collection.name }}</li>\n    </ol>\n    <div class=\"jumbotron text-center\">\n        <h1>{{ collection.name }}</h1>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-4\">\n            <h3>Beschrijving</h3>\n        </div>\n        <div class=\"col-sm-8\">\n            <p>{{collection.description }}</p>\n        </div>\n    </div>\n    <div  class=\"row \" *ngIf=\"bags\">\n        <div class=\"col-sm-6 col-md-4 box\" *ngFor=\"let bag of bags\">\n            <div class=\"thumbnail\" >\n                <img [src]=bag.attachments[0].url>\n                <div class=\"caption\">\n                    <h3>{{ bag.title }}</h3>\n                    <p>{{ bag.description }}</p>\n                    <p><a [routerLink]=\"[ bag.id,'attachments']\" class=\"btn btn-primary\" role=\"button\">Bekijk meer</a>\n                </div>\n            </div>\n        </div>\n        <div *ngIf=\"!bags\">\n            <h1>None available</h1>\n        </div>\n    </div>\n </div>\n <div *ngIf='!collection'>\n    <div class=\"jumbotron text-center\">\n        <h1>Beeldbank</h1>\n    </div>\n    <div class=\"panel panel-danger\">\n        <div class=\"panel-heading\">\n            No collections found\n        </div>\n        <div class=\"panel-body\">\n            Api unreachable\n        </div>\n    </div>\n</div>\n\n"
 
 /***/ }),
 
-/***/ 495:
+/***/ 534:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf='collections'>\n        <div class=\"jumbotron row\">\n            <img src=\"assets/images/ahs.png\" rel=\"logo artevelde\" class=\"col-sm-2 logo\">\n            <div class=\"col-sm-10\">\n                <h1>Beeldbank {{ collections[0].organisations_name }}</h1>\n            </div>\n        </div>\n    <div class=\"row\">\n        <div class=\"col col-sm-12\">\n            <p>Welkom op de Beeldbank van de Arteveldehogeschool Mediatheek Mariakerke!</p>\n            <p>Naast de collectie in open rek in de mediatheek, bestaat er ook een erfgoedcollectie in het archief. Met deze beeldbank bieden wij alle geïnteresseerden een vitrine op deze erfgoedcollectie.</p>\n            <p>Klik op een deelcollectie om alle beelden die tot die collectie behoren te bekijken. De digitalisering van deze collectie is een werk van lange adem, dus kom gerust af en toe eens kijken in de beeldbank welke collecties er werden toegevoegd. \n            De originelen zijn steeds raadpleegbaar in de mediatheek.</p>\n            <p>Wil je meer weten over de beelden, of heb je een vraag hierover, stuur dan een e-mail naar <a href='mailto:mediatheek.mariakerke@arteveldehs.be'>mediatheek.mariakerke@arteveldehs.be</a></p>\n        </div>\n    </div>\n\n    <h1>Collecties</h1>\n    <div class=\"row\">\n        <div class=\"col-sm-12\" *ngFor=\"let collection of collections\">\n            <div class=\"media\" [routerLink]=\"[ collection.id,'bags']\">\n                <div class=\"media-left\">\n                    <img class=\"media-object\" src=\"http://lorempixel.com/300/300/cats/?79305\">\n                </div>\n                <div class=\"media-body\">\n                    <h4 class=\"media-heading\">{{ collection.name }}</h4>\n                    <p>{{ collection.description }}</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<div *ngIf='!collections'>\n    <div class=\"jumbotron text-center\">\n        <h1>Beeldbank</h1>\n    </div>\n    <div class=\"panel panel-danger\">\n        <div class=\"panel-heading\">\n            No collections found\n        </div>\n        <div class=\"panel-body\">\n            Api unreachable\n        </div>\n    </div>\n</div>"
+module.exports = "<div *ngIf='collections'> \n    <div>\n        <div class=\"navbar\">\n            <div class=\"container-fluid\">\n              <div class=\"navbar-header\">\n                <a routerLink=\"/\" class=\"navbar-brand\">{{ collections[0].organisations_name }}</a>\n              </div>\n              <ul class=\"nav navbar-nav\">\n                <li><a routerLink=\"/\">Beeldbank</a></li>\n              </ul>\n              <ul class=\"nav navbar-nav navbar-right\">\n                <li><a>Contacteer ons</a>\n              </ul>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"jumbotron row\">\n        <div class=\"col-sm-6\">\n            <h2>Beeldbank</h2>\n            <p>Campus Mariakerke</p>\n            <p>Naasr onze collectie in de rekken van de mediatheek is er ook een erfgoedcollectie aanwezig in ons archief. Met deze beeldbank willen we jou een kijk geven in deze collectie vol gedigitaliseerde werken van onze studenten.</p>\n            <p class=\"btn btn-primary\" role=\"button\" href=\"#collecties\">Bekijk alle collecties</p>\n        </div>\n        <img class=\"col-sm-6\" [src]=\"attachments[0]\">\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-6\"  *ngFor=\"let collection of collections; let i = index\">\n            <div class=\"thumbnail\" >\n                <img [src]=attachments[i]>\n                <div class=\"caption\">\n                    <h3>{{ collection.name }}</h3>\n                    <p><a [routerLink]=\"[ collection.id,'bags']\" class=\"btn btn-primary\" role=\"button\">Bekijk deze collectie</a></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<div *ngIf='!collections'>\n    <div class=\"jumbotron text-center\">\n        <h1>Beeldbank</h1>\n    </div>\n    <div class=\"panel panel-danger\">\n        <div class=\"panel-heading\">\n            No collections found\n        </div>\n        <div class=\"panel-body\">\n            Api unreachable\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
-/***/ 520:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(312);
+module.exports = __webpack_require__(345);
 
 
 /***/ }),
 
-/***/ 54:
+/***/ 62:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollectionService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -523,6 +542,20 @@ var CollectionService = (function () {
             .map(function (res) { return res.json(); })
             .catch(this.handleError);
     };
+    //  getAttachmentFromCollection(id: number){
+    //     this.getBagsFromCollection(id).subscribe(
+    //          bags => {
+    //             let bagid = bags[0].id;
+    //                 this.getBagWithAttachments(bagid).subscribe(
+    //                 data => {
+    //                 let attachmenturl = data[0].url;
+    //                 console.log(attachmenturl);
+    //                 return attachmenturl;
+    //                 }
+    //             )
+    //         }
+    //     )    
+    //  }
     /**
      * Handle any errors from the API
      */
@@ -549,5 +582,5 @@ var CollectionService = (function () {
 
 /***/ })
 
-},[520]);
+},[558]);
 //# sourceMappingURL=main.bundle.js.map
